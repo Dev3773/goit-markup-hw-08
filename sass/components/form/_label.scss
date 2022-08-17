@@ -1,0 +1,78 @@
+.form-label {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.label-indent {
+  margin-bottom: 10px;
+}
+
+.modal-label__name {
+  display: block;
+  text-align: start;
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+
+  color: var(--icon-modal-cl);
+}
+
+// --Textarea--
+
+.textarea-label {
+  margin-bottom: 20px;
+}
+
+// --Checkbox--
+
+.form-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.form-checkbox__add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+
+  border-radius: 2px;
+  outline: 2px solid var(--accent-cl);
+  outline-offset: -2px;
+  transition: var(--animac);
+}
+
+.checkbox-indent {
+  margin-right: 7px;
+}
+
+.checkbox-line {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+
+  color: rgb(117, 117, 117);
+
+  line-height: 1.46;
+  letter-spacing: 0.03em;
+}
+
+.checkbox-line__link {
+  display: block;
+  color: var(--second-text-cl);
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+}
+
+.line-indent {
+  margin-left: 3px;
+}

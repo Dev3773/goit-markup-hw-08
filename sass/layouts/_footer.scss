@@ -1,0 +1,130 @@
+.footer {
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--third-color);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+/* --Contacts-- */
+
+.addres-foot {
+  margin-right: 70px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.footer-address {
+  margin-top: 20px;
+}
+
+.address-indent {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  display: block;
+  color: var(--main-text-cl);
+  transition: var(--animac);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+
+  &:hover, &:focus {
+    color: var(--second-text-cl);
+  }
+}
+
+.address__email-link,
+.address__tel-link {
+  display: block;
+
+  color: rgba(255, 255, 255, 0.6);
+  transition: var(--animac);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &:hover, &:focus {
+    color: var(--second-text-cl);
+  }
+}
+
+.address-item {
+  &:hover, &:focus {
+    color: var(--second-text-cl);
+  }
+}
+/* --Social network-- */
+
+.social-network__list {
+  display: flex;
+}
+
+.footer-title {
+  display: block;
+  color: var(--main-text-cl);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase
+}
+
+.title-indent {
+  margin-bottom: 20px;
+}
+
+.form-indent {
+  margin-left: auto;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+}
+
+.form-footer__email {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-right: auto;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+  order: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  color: var(--main-text-cl);
+  background-color: #2F303A;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  transition: var(--animac);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:focus {
+    border-color: var(--border-form-color);
+  }
+}

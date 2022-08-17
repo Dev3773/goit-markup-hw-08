@@ -1,0 +1,25 @@
+.title {
+  color: var(--accent-cl);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+@mixin title-indent($indent) {
+  margin-bottom: $indent;
+}
+
+.title--applications {
+  @include title-indent(50px);
+}
+
+.title--team {
+  @include title-indent(50px);
+}
+
+.title--customers {
+  @include title-indent(50px);
+}

@@ -1,0 +1,22 @@
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay-desc {
+  position: absolute;
+  padding: 66px 24px;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: var(--animac);
+
+  background-color: rgba(33, 150, 243, 0.9);
+  color: var(--main-text-cl);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+}
+
