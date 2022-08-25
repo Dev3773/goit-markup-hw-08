@@ -1,4 +1,15 @@
 .title {
+  @media screen and (max-width: 1199px) {
+  color: var(--accent-cl);
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  }
+
+  @media screen and (min-width: 1200px) {
   color: var(--accent-cl);
 
   font-weight: 700;
@@ -6,6 +17,7 @@
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  } 
 }
 
 @mixin title-indent($indent) {
@@ -17,9 +29,19 @@
 }
 
 .title--team {
-  @include title-indent(50px);
+  @media screen and (max-width: 1199px) {
+    @include title-indent(30px);
+  }
+  @media screen and (min-width: 1200px) {
+    @include title-indent(50px);
+  }
 }
 
 .title--customers {
-  @include title-indent(50px);
+  @media screen and (max-width: 1199px) {
+      @include title-indent(30px);
+    }
+    @media screen and (min-width: 1200px) {
+      @include title-indent(50px);
+    }
 }

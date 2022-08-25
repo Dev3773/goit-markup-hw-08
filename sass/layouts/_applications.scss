@@ -1,5 +1,9 @@
 .applications {
   padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .working {
@@ -8,10 +12,12 @@
 }
 
 .working__item {
+  @media screen and (min-width: 1200px) {
   position: relative;
   
   &:not(:last-child) {
     margin-right: 30px;
+    }
   }
 }
 
