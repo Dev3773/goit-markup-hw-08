@@ -3,6 +3,10 @@
 }
 
 .customers__item {
+  @media screen and (max-width: 479px) {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+    }
   @media screen and (min-width: 480px) {
     width: 210px;
     height: 92px;

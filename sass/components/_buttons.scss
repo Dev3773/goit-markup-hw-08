@@ -24,8 +24,12 @@
 .button--hero {
   @extend .button;
   
-  min-width: 216px;
+  min-width: 200px;
   padding: 10px 32px;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+  }
   
   &:hover, &:focus {
     background-color: var(--btn-bg-color);

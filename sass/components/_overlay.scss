@@ -5,9 +5,9 @@
 
 .overlay-desc {
   position: absolute;
-  padding: 66px 24px;
   top: 0;
   left: 0;
+
   transform: translateY(100%);
   transition: var(--animac);
 
@@ -17,6 +17,18 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
-  letter-spacing: 0.03em;
-}
+  letter-spacing: 0.03em; 
 
+  @media screen and (max-width: 479px) {
+      padding: 15px 24px 150px;
+    }
+  @media screen and (min-width: 480px) {
+    padding: 78px 24px;
+    }
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 78px;
+    }
+   @media screen and (min-width: 768px) {
+    padding: 66px 24px;
+    }
+}
