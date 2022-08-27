@@ -349,8 +349,7 @@ img {
 
 .modal-wrapper {
   position: absolute;
-  width: 528px;
-  height: 581px;
+  width: 95%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -360,6 +359,18 @@ img {
   background-color: var(--main-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    width: 450px;
+    height: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-button {
@@ -492,7 +503,7 @@ img {
 }
 
 .modal-label__input {
-  width: 448px;
+  width: 100%;
   padding: 11px 11px 11px 35px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
