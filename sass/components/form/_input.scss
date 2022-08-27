@@ -1,6 +1,5 @@
 .modal-label__input {
-  // width: 448px;
-width: 100%;
+  width: 100%;
   padding: 11px 11px 11px 35px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -44,34 +43,25 @@ width: 100%;
 
   color: var(--accent-cl);
 
-  font-size: 12px;
-  line-height: 1.17px;
+  font-size: 14px;
+  line-height: 1.14px;
   letter-spacing: 0.01em;
   resize: none;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 12px;
+    line-height: 1.17px;
+  }
 
   &:hover, &:focus {
     border: 1px solid var(--btn-color);
   }
 }
 
-// --Checkbox--
-
-.form-checkbox__icon {
-  .form-checkbox__input:checked + .form-checkbox__add & {
-    opacity: 1;
-    fill: #ffffff;
-  }
+.textarea-label {
+  margin-bottom: 20px;
 }
 
-.form-checkbox__add {
-  .form-checkbox__input:checked + & {
-    background-color: var(--btn-color);
-    outline: var(--btn-color);
-    transition: var(--animac);
-  } 
-}
 
-.form-checkbox__icon {
-  opacity: 0;
-}
+

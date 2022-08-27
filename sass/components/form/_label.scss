@@ -20,12 +20,6 @@
   color: var(--icon-modal-cl);
 }
 
-// --Textarea--
-
-.textarea-label {
-  margin-bottom: 20px;
-}
-
 // --Checkbox--
 
 .form-checkbox {
@@ -49,22 +43,21 @@
 }
 
 .checkbox-indent {
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .checkbox-line {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-
+  letter-spacing: 0.03em;
+  text-align: left;
+  
   color: rgb(117, 117, 117);
 
-  line-height: 1.46;
-  letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .checkbox-line__link {
-  display: block;
   color: var(--second-text-cl);
 
   font-size: 14px;
@@ -74,5 +67,24 @@
 }
 
 .line-indent {
-  margin-left: 3px;
+  margin-left: 1px;
+}
+
+.form-checkbox__icon {
+  .form-checkbox__input:checked+.form-checkbox__add & {
+    opacity: 1;
+    fill: #ffffff;
+  }
+}
+
+.form-checkbox__add {
+  .form-checkbox__input:checked+& {
+    background-color: var(--btn-color);
+    outline: var(--btn-color);
+    transition: var(--animac);
+  }
+}
+
+.form-checkbox__icon {
+  opacity: 0;
 }
