@@ -3,8 +3,8 @@
 
   font-family: var(--second-font);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
 
   &--right-header {
@@ -14,8 +14,13 @@
   &--right-foot {
     color: var(--main-text-cl);
   }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+      }
 }
 
-.logo-indent {
-  margin-right: 93px;
-}
+// .logo-indent {
+//   margin-right: 93px;
+// }

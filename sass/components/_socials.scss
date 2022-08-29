@@ -1,6 +1,6 @@
 .social-network__list {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .network-indent {
@@ -30,7 +30,6 @@
     color: var(--icon-footer-cl);
     background-color: var(--btn-color);
   }
-  
 }
 
 .social-network__link--clr-foot {
