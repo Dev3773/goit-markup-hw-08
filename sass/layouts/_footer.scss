@@ -7,12 +7,6 @@
 }
 
 .footer__container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-
   width: 100%;
 
   @media screen and (max-width: 767px) {
@@ -20,7 +14,11 @@
       }
 
   @media screen and (min-width: 768px) {
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
       }
 
   @media screen and (min-width: 1200px) {
@@ -32,16 +30,18 @@
 // /* --Contacts-- */
 
 .addres-foot{
+  text-align: center;
+
   @media screen and (min-width: 1200px) {
-     display: flex;  
-     flex-direction: column;
-     margin-right: auto;
-  }
-  
+    display: flex;  
+    flex-direction: column;
+    text-align: left;
+      }
 }
 
 .addres-block {
   margin-bottom: 60px;
+  
 
   @media screen and (min-width: 780px) and (max-width: 1199px) {
     margin-bottom: 60px;
@@ -57,13 +57,14 @@
 .logo-footer {
   display: flex;
   justify-content: center;
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 20px;
-      }
 
-  @media screen and (min-width: 1200px) {
-    justify-content: flex-start;
-      }
+   @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+        }
+
+   @media screen and (min-width: 1200px) {
+      justify-content: flex-start;
+        }
 }
 
 
@@ -79,7 +80,7 @@
   &:hover,
   &:focus {
     color: var(--second-text-cl);
-  }
+      }
 }
 
 .address-indent {
@@ -106,7 +107,7 @@
 
   &:hover, &:focus {
     color: var(--second-text-cl);
-  }
+      }
 }
 
 .address__email-link,
@@ -123,7 +124,7 @@
 
   &:hover, &:focus {
     color: var(--second-text-cl);
-  }
+      }
 }
 
 /* --Social network-- */
@@ -168,7 +169,7 @@
 
   @media screen and (min-width: 1200px) {
       text-align: left;
-    }
+        }
 }
 
 .footer-form {
@@ -188,17 +189,10 @@
       }
 }
 
-.form-indent {
-  @media screen and (max-width: 1199px) {
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 .form-footer {
   @media screen and (min-width: 1200px) {
     display: flex;
-  }
+      }
 }
 
 .form-footer__email {
@@ -210,11 +204,11 @@
 
 @media screen and (min-width: 480px) {
   width: 450px;
-  }
+    }
 
 @media screen and (min-width: 1200px) {
     width: 358px;
-  }
+      }
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -230,11 +224,11 @@
 
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
-    }
+      }
 
   &:focus {
     border-color: var(--border-form-color);
-    }
+      }
 }
 
 .email-indent {
@@ -243,5 +237,5 @@
       }
   @media screen and (min-width: 1200px) {
       margin-right: 12px;
-      }
+        }
 }

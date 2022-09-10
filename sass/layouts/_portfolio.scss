@@ -70,17 +70,15 @@
 }
 
 .portfolio__item {
+  height: 100%;
   @media screen and (min-width: 480px) {
     width: 450px;
-    height: 404px;
     }  
   @media screen and (min-width: 768px) {
     width: 354px;
-    height: 404px;
     } 
   @media screen and (min-width: 1200px) {
     width: 370px;
-    height: 404px;
     }
  
   &:hover, &:focus {
@@ -93,15 +91,15 @@
 }
 
 .card {
+  padding: 20px 24px;
+  
   border-right: 1px solid var(--border-color);
   border-bottom: 1px solid var(--border-color);
   border-left: 1px solid var(--border-color);
 }
 
 .card__name {
-  margin-top: 20px;
   margin-bottom: 4px;
-  margin-left: 24px;
 
   color: var(--accent-cl);
 
@@ -109,14 +107,13 @@
   font-size: 18px;
   line-height: 2.0;
   letter-spacing: 0.06em;
-  vertical-align: top;
 }
 
 .card__desc {
-  color: var(--email-phone-cl);
+  text-align: left;
 
-  margin-bottom: 20px;
-  margin-left: 24px;
+  color: var(--email-phone-cl);
+  
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;

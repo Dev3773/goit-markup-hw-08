@@ -4,13 +4,10 @@
 }
 
 .overlay-desc {
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
-
-  transform: translateY(100%);
-  transition: var(--animac);
+  height: 101%;
 
   background-color: rgba(33, 150, 243, 0.9);
   color: var(--main-text-cl);
@@ -20,6 +17,8 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   padding: 15px 24px 150px;
+  transform: translateY(100%);
+  transition: var(--animac);
 
   @media screen and (min-width: 480px) {
     padding: 78px 24px;
