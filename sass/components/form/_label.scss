@@ -13,7 +13,7 @@
   text-align: start;
   margin-bottom: 4px;
 
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 1.14;
   letter-spacing: 0.01em;
 
@@ -53,14 +53,14 @@
   color: rgb(117, 117, 117);
 
   @media screen and (min-width: 1200px) {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
 .checkbox-line__link {
   color: var(--second-text-cl);
 
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration-line: underline;
